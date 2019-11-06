@@ -7,13 +7,19 @@
 #es decir, lista de listas.
 listanom=[]
 listanum=[]
-listagrupo=[[listanom],[listanum]]
 nom=("a")
 while(nom!="s"):
-    nom=input("Escribe un nombre (escribe una 's' para terminar: ")
-    listanom+=[nom]
-    num=int(input("Escribe un número de télefono: "))
-    listanum+=[num]
-for i in range (len(listagrupo)):
-    print(listagrupo[i])
+    nom=input("Escribe un nombre (escribe una 's' para terminar): ")
+    listanom.append(nom)
+    if nom!="s":
+        num=int(input("Escribe un número de télefono: "))
+        listanum+=[num]
+print("Los nombres y teléfonos de la agenda son:")
+for i in range(len(listanom)-1):
+    print(" ")
+    print(listanom[i],":",listanum[i])
+   
+    
+
+        
 
