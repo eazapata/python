@@ -28,6 +28,9 @@ while(nom!=("")):
 print("Las notas de los alumnos son: ")
 for i in range(len(principal)):
     for j in range (len(principal[i])):
-        print(principal[i][j])
+        if(j==(len(principal[i])-1)):
+            print (principal[i][j])
+        else:
+            print(principal[i][j],end="")
         
         

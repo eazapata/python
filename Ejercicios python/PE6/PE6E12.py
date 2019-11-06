@@ -12,6 +12,8 @@ maximo=int(input("Valor máximo: "))
 while (minimo>maximo):
     maximo=int(input("%d no es mayor que %d,introduce otro número: "%(maximo,minimo))) 
 secreto=int(input("Piensa un número entre %d y %d a ver si lo puedo adivinar"%(minimo,maximo)))
+while(secreto<minimo)or(secreto>maximo):
+    secreto=int(input("Ese número no está entre %d y %d di otro"%(minimo,maximo)))
 num=random.randint (minimo, maximo)
 while (num!=secreto):
     while (num<secreto):
