@@ -31,6 +31,6 @@ for i in range(len(principal)):
         if(j==(len(principal[i])-1)):
             print (principal[i][j])
         else:
-            print(principal[i][j],end="")
+            print(principal[i][j],",",end="")
         
         
